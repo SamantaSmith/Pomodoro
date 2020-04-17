@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <View
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <View
+        android:background="@color/forHeadingViews"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textSize="60sp"
+            android:text="@string/for_heading"
+            android:textColor="@color/forTextView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:foregroundGravity="top"
+            android:onClick="onClickSettings"
+            android:background="@android:color/transparent"
+            android:id="@+id/button_settings"
+            android:layout_marginTop="-50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/forHeadingViews"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <View
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/image_button"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="30dp"
+            android:onClick="onClickButton"
+
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+
+            android:src="@drawable/rabbit"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:textColor="@color/forTextView"
+            android:textSize="60sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:text="00:04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="buttonPauseClick"
+                android:textSize="25sp"
+                android:id="@+id/button_pause"
+                android:background="@drawable/for_button_pause"
+                android:textAllCaps="false"
+                android:text="Pause"
+                android:layout_marginRight="8dp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:onClick="buttonStopClick"
+                android:textSize="25sp"
+                android:id="@+id/button_stop"
+                android:background="@drawable/for_button_stop"
+                android:textAllCaps="false"
+                android:text="Stop"
+                android:layout_marginLeft="8dp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_marginLeft="0dp"
+            android:id="@+id/subtext"
+            android:textStyle="italic"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:textColor="@color/forTextView"
+            android:text="Press a rabbit to focus on what really matters!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
